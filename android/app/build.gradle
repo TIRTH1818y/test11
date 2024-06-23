@@ -51,6 +51,8 @@ android {
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
+        minSdkVersion 21
+        targetSdkVersion 34
         versionName flutterVersionName
     }
 
@@ -75,3 +77,12 @@ configurations.all{
         force 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.22'
     }
 }
+task wrapper(type: Wrapper){
+    gradleVersion = '7.2'
+}
+task prepareKotlinBuildScriptModel {
+
+}
+//MD5: 93:0C:87:1F:E0:5B:64:AF:64:32:C9:0E:7D:63:60:52
+//SHA1: E4:6E:FE:93:80:97:E7:46:E9:6B:7F:D6:67:18:A8:BC:FA:7C:B7:8A
+//SHA-256: EB:F7:D1:6F:31:A5:B6:E0:6B:37:40:8A:00:83:90:D0:91:A6:2F:F9:E6:CD:FB:D5:94:68:2E:C0:E6:7D:57:7C
