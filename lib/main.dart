@@ -1,9 +1,8 @@
-
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'OTP.dart';
 import 'firebase_options.dart';
-
 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,12 +22,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter ',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // This is the theme of your application.
-
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'THIS PROJECT MADE BY TIRTH'),
+      home: phoneotp()
     );
   }
 }
