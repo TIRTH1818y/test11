@@ -1,3 +1,4 @@
+
 plugins {
     id "com.android.application"
     // START: FlutterFire Configuration
@@ -51,7 +52,7 @@ android {
         minSdkVersion flutter.minSdkVersion
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 34
         versionName flutterVersionName
     }
@@ -60,7 +61,8 @@ android {
         release {
             // TODO: Add your own signing config for the release build.
             // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig signingConfigs.debug
+           signingConfig signingConfigs.debug
+
         }
     }
 }
@@ -83,6 +85,14 @@ task wrapper(type: Wrapper){
 task prepareKotlinBuildScriptModel {
 
 }
+//dependencies {
+//    // Import the BoM for the Firebase platform
+//    implementation(platform("com.google.firebase:firebase-bom:33.1.1"))
+//
+//    // Add the dependency for the Firebase Authentication library
+//    // When using the BoM, you don't specify versions in Firebase library dependencies
+//    implementation("com.google.firebase:firebase-auth")
+//}
 //MD5: 93:0C:87:1F:E0:5B:64:AF:64:32:C9:0E:7D:63:60:52
 //SHA1: E4:6E:FE:93:80:97:E7:46:E9:6B:7F:D6:67:18:A8:BC:FA:7C:B7:8A
 //SHA-256: EB:F7:D1:6F:31:A5:B6:E0:6B:37:40:8A:00:83:90:D0:91:A6:2F:F9:E6:CD:FB:D5:94:68:2E:C0:E6:7D:57:7C
