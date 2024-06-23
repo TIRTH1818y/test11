@@ -17,7 +17,7 @@ class _phoneotpState extends State<phoneotp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("OTP "),
+        title: Text("OTP test "),
         centerTitle: true,
       ),
       body: Column(
