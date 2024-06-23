@@ -18,7 +18,7 @@ class _otpUIState extends State<otpUI> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("OTP"),
+        title: Text("OTP Test"),
       ),
       body: Column(
         children: [
