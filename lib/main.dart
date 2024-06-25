@@ -60,6 +60,17 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    begin: Alignment.topRight,
+                    end: Alignment.bottomLeft,
+                    colors: [
+                      Colors.deepPurpleAccent,
+                      Colors.blue,
+                      Colors.green,
+                    ],
+                  )
+              ),
               width: 300,
               child: TextField(
 
